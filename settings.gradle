@@ -1,0 +1,24 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Movie-Compose"
+include ':app'
+include ':libraries:navigation'
+include ':features:register'
+
+include ':core:dagger'
+include ':commons:androidUtils'
+include ':core:mvi'
+include ':libraries:ui-component'
+include ':libraries:firebase-utils'
